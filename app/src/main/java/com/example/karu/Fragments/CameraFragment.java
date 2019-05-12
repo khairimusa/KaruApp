@@ -92,7 +92,6 @@ public class CameraFragment extends Fragment {
 
         mImageView = (ImageView)v.findViewById(R.id.image_view_camera_fragment);
         mProgressBar = (ProgressBar)v.findViewById(R.id.progress_bar);
-        mProgressBar.setVisibility(View.INVISIBLE);
 
         BottomNavigationView bottomNav = v.findViewById(R.id.bottom_navigation);
 
@@ -175,7 +174,7 @@ public class CameraFragment extends Fragment {
         final String FileNameText = editTextFileName.getText().toString().trim();
         final String CategoryText = editTextCategory.getText().toString().trim();
         final String RentRateText = editTextRentRate.getText().toString().trim();
-        final String UserID = FirebaseAuth.getInstance().getUid();
+        //final String UserID = FirebaseAuth.getInstance().getUid();
         final boolean isLike = false;
         final boolean isListed = false;
 
@@ -223,7 +222,7 @@ public class CameraFragment extends Fragment {
                                 @Override
                                 public void run() {
                                     mProgressBar.setProgress(0);
-                                    mProgressBar.setVisibility(View.INVISIBLE);
+                                    //mProgressBar.setVisibility(View.INVISIBLE);
                                 }
                             }, 500);// deleay progress bar for 5 seconds
 

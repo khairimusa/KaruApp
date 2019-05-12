@@ -17,4 +17,23 @@
         android:textSize="20sp"
         android:textStyle="bold" />
 
+    <ImageView
+        android:id="@+id/fragment_message_empty_favourite_imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/empty_favorite_kitty" />
+
+    <TextView
+        android:id="@+id/fragment_message_empty_inbox_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_message_empty_favourite_imageView"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/nunito"
+        android:text="You have no favorite items yet"
+        android:layout_marginTop="10dp"/>
+
 </RelativeLayout>
