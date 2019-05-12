@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/screen_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/nunito"
+        android:text="I am looking for..."
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <!--<TextView
+        android:id="@+id/browse_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="58px"
+        android:fontFamily="@font/nunito"
+        android:text="Browse Item"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"/>-->
+
+    <ProgressBar
+        android:id="@+id/fragement_browse_progress_circle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycle_view_browse"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/edit_text_search"
+
+        />
+
+    <EditText
+        android:id="@+id/edit_text_search"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Search Here"
+        android:textSize="14sp"
+        android:ems="10"
+        android:background="@drawable/search_layout"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/screen_name"
+        android:fontFamily="@font/nunito"
+        android:textStyle="bold"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/fragment_browse_search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Search"
+        android:layout_toRightOf="@+id/edit_text_search"
+        android:layout_marginLeft="5dp"
+        android:layout_below="@id/screen_name"
+        android:textAllCaps="false"
+        android:fontFamily="@font/nunito"/>
+
+
+</RelativeLayout>

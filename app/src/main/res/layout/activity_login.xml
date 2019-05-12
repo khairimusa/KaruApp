@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F6F8"
+    tools:context=".LoginActivity">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25px"
+        android:layout_marginTop="58px"
+        android:fontFamily="@font/nunito"
+        android:text="Welcome To KaruApp"
+        android:textColor="#515C6F"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/login_applogo"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/login_kitty" />
+
+    <EditText
+        android:id="@+id/login_email_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_applogo"
+        android:background="@drawable/email"
+        android:fontFamily="@font/nunito"
+        android:hint="Email"
+        android:paddingLeft="78dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="#515C6F"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/login_password_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_email_input"
+        android:layout_marginTop="-45dp"
+        android:background="@drawable/password"
+        android:hint="********"
+        android:inputType="textPassword"
+        android:paddingLeft="78dp"
+        android:textColor="@color/colorAccent"
+        android:textColorHint="#515C6F"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_btn"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/register_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nunito"
+            android:text="Register New Account"
+            android:textColor="#515C6F"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            />
+
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/nunito"
+            android:text="Or"
+            android:textColor="#515C6F"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/forget_password_link"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nunito"
+            android:text="Forget Password?"
+            android:layout_gravity="center"
+            android:textColor="#515C6F"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_margin="10dp"/>
+
+
+
+
+
+    </LinearLayout>
+
+    <com.rey.material.widget.Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_password_input"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/nunito"
+        android:paddingBottom="10dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

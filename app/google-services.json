@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "700701737945",
+    "firebase_url": "https://karuapp-3acf0.firebaseio.com",
+    "project_id": "karuapp-3acf0",
+    "storage_bucket": "karuapp-3acf0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:700701737945:android:138a238142e17dd1",
+        "android_client_info": {
+          "package_name": "com.example.karu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "700701737945-mhcjhqonm08uieehp8pkbghpm9hgtb9e.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.karu",
+            "certificate_hash": "f761ecbfdb4fb60ef961ed8553a07299b901d9e6"
+          }
+        },
+        {
+          "client_id": "700701737945-ff6924gc2fgkeqf73fmhk5neg5dem67n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwgmem6rpMwZKm4hVZgPTndJyXM7eWDHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "700701737945-ff6924gc2fgkeqf73fmhk5neg5dem67n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

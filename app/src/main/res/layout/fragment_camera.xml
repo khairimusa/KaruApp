@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+
+
+    <TextView
+        android:id="@+id/screen_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:fontFamily="@font/nunito"
+        android:text="List"
+        android:textColor="@color/colorAccent"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button_choose_image"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/progress_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_button"
+        android:text="Choose Picture"
+        android:textAllCaps="false"
+        android:textColor="#FFF" />
+
+    <TextView
+        android:id="@+id/camera_fragment_file_name_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button_choose_image"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/nunito"
+        android:text="Name"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_text_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camera_fragment_file_name_textView"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/search_layout"
+        android:hint="Enter File Name"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp" />
+
+    <TextView
+        android:id="@+id/camera_fragment_category_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_text_file_name"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/nunito"
+        android:text="Category"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+
+        />
+
+    <EditText
+        android:id="@+id/fragment_browse_editText_category"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camera_fragment_category_textView"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/search_layout"
+        android:hint="Enter Category"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp" />
+
+    <TextView
+        android:id="@+id/camera_fragment_rentRate_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fragment_browse_editText_category"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/nunito"
+        android:text="Rent Rate"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/camera_fragment_rentRate_textView"
+        android:layout_marginLeft="-55dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/camera_fragment_rentRate_textView"
+        android:fontFamily="@font/nunito"
+        android:text="RM"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/fragment_browse_editText_rentRate_week"
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/camera_fragment_rentRate_textView"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/search_layout"
+        android:fontFamily="@font/nunito"
+        android:hint="0"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/camera_fragment_rentRate_textView"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@+id/camera_fragment_rentRate_textView"
+        android:fontFamily="@font/nunito"
+        android:text="Per Day"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/image_view_camera_fragment"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/screen_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_view_camera_fragment"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/button_upload"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_button"
+        android:text="List Now!"
+        android:textAllCaps="false"
+        android:textColor="#FFF" />
+
+
+</RelativeLayout>
